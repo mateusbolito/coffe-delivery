@@ -1,7 +1,11 @@
 import { BenefitsContainer, IntroContainer, IntroContent, IntroTitle } from "./styles";
 import IntroImg from '../../../../assets/IntroImg.png'
 import { RegularText } from "../../../../components/Typography";
+import { ShoppingCart, Package, Timer, Coffee} from "phosphor-react";
+import { InfoWithIcom } from "../../../../components/InfoWithIcon";
+import { useTheme } from "styled-components";
 export function Intro() {
+  const {colors} = useTheme()
  return(
     <IntroContainer>
         <IntroContent className="container">
@@ -15,10 +19,22 @@ export function Intro() {
             </RegularText>
           </section>
             <BenefitsContainer>
-                <p>beneficip</p>
-                <p>beneficip</p>
-                <p>beneficip</p>
-                <p>beneficip</p>
+            <InfoWithIcom icon={<ShoppingCart weight="fill"/>} 
+               iconBg={colors["brand-yellow-dark"]}
+               text='compra simples e sugura'
+                />
+                <InfoWithIcom icon={<Package weight="fill"/>} 
+               iconBg={colors["base-text"]}
+               text='Embalagem manter o vafé intacto'
+                />
+                 <InfoWithIcom icon={<Timer weight="fill"/>} 
+               iconBg={colors["brand-yellow-dark"]}
+               text='Entrega rapida e rastreada'
+                />
+                 <InfoWithIcom icon={<Coffee weight="fill"/>} 
+               iconBg={colors["brand-purple"]}
+               text='o café chega fresquinho até voce'
+                />
             </BenefitsContainer>
 
          </div>

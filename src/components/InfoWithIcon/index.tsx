@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import { IconContainer, InfoWithIconContainer } from "./styles";
 
+
 interface InfoWithIconProps {
 icon: ReactNode;
 text: string | ReactNode;
