@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 interface TitleTextProps {
 size?: "xl" | "l" | "m" | "s" | "xs";
-color?: "title" |"subtitle" |"texte";
+color?: "title" |"subtitle" |"text";
 weight?: string | number;
 }
 
