@@ -19,4 +19,5 @@
 + React Router Dom
 + React Hook Form
 + Validações de formulário com Zod
+ 🛠️
  
