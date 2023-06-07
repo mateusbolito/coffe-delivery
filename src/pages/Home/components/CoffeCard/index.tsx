@@ -24,7 +24,7 @@ export interface Coffe {
 interface CoffeeProps {
   coffee: Coffe;
 }
-export function CoffeCard({ coffe }: any) {
+export function CoffeCard({ coffe }) {
   const [quantity, setQuantity] = useState(1);
   const { addCoffeeToCart } = useCart();
 
